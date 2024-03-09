@@ -11,7 +11,7 @@ public class Utility {
 	public static final String SAVE_MESSAGE = "Record saved successfully";
 	public static final String ERROR_MESSAGE = "Something went wrong while saving employee details";
 	public static final String EMAIL_REGEX="\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b";
-	public static final String PASSWORD_REGEX= "^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()-_+=])[a-zA-Z0-9!@#$%^&*()-_+=]{8}$";
+	public static final String PASSWORD_REGEX= "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\\\S+$).{8,}$";
 
 	public static  Result successResult(Object data) {
 		Result result = new Result();

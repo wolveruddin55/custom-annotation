@@ -1,7 +1,9 @@
-package com.files.demo.utility;
+package com.files.demo.validation;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
+
+import com.files.demo.utility.Utility;
 
 public class PasswordCheck implements ConstraintValidator<PasswordValidator, String>{
 
